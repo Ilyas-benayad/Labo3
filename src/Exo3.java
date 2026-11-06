@@ -10,15 +10,18 @@ nombre n'est pas positif.
     int n = s.nextInt();
     double res = 0;
     int k = 1;
+
     while (n<=0){
         System.out.println("Entrer un positif");
         n = s.nextInt();
     }
+
     while (k<=n){
         int nb = s.nextInt();
         res += nb;
         ++k;
     }
+
     System.out.println("la moyenne de la série = " + res/n);
 
 }
